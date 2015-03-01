@@ -1,4 +1,6 @@
 # nodelogin
 Login with node bootstrap jquery
 
-By Vinay JOshi
+by Vinay Joshi
+vinay01joshi@gmail.com
+vinay.joshi.ngi@gmail.com
