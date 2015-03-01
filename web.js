@@ -1,5 +1,4 @@
-var express = require("express"),
-mongo = require('mongodb');
+var express = require("express");
 
 
 var app = express();
@@ -16,14 +15,9 @@ app.set('view engine', 'ejs');
 /*Applications Routes*/ 
 require('./config/route')(app);
 
-var mongoClient = mongo.MongoClient;
+/*Application configuration*/
+require('./config/config');
 
-//Mongo db connection
-mongoClient.connect("mongodb://localhost:27017/multivision", function(err, db) {
-	if(!err) {
-		console.log("We are connected");
-	}
-});
 
 var port = process.env.PORT || 3030
 
