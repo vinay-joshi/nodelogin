@@ -7,7 +7,7 @@ var app = express();
 app.use("/styles", express.static(__dirname + '/public/css'));
 app.use("/image", express.static(__dirname + '/public/image'));
 app.use("/script", express.static(__dirname + '/public/script'));
-
+app.use("/views", express.static(__dirname + '/views'));
 var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 app.set('view engine', 'ejs');
